@@ -1,0 +1,98 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+    /* background-color: var(--lightModeBackground); */
+}
+
+:root {
+    /* Dark Mode */
+    --darkModeElements: hsl(209, 23%, 22%);
+    --darkModeBackground: hsl(207, 26%, 17%);
+    --darkModeText: hsl(0, 0%, 100%);
+    /* Light Mode */
+    --lightModeElements: hsl(0, 0%, 100%);
+    --lightModeBackground: hsl(0, 0%, 98%);
+    --lightModeText: hsl(200, 15%, 8%);
+    --lightModeInput: hsl(0, 0%, 52%);
+}
+
+.theme_dark_background {
+    background-color: var(--darkModeBackground);
+    color: var(--darkModeText);
+}
+.theme_dark_element {
+    background-color: var(--darkModeElements);
+    color: var(--darkModeText);
+    box-shadow: none !important;
+}
+.theme_dark_element::placeholder {
+    color: var(--darkModeText);
+}
+.theme_light_background {
+    background-color: var(--lightModeBackground);
+    color: var(--lightModeText);
+}
+.theme_light_element {
+    background-color: var(--lightModeElements);
+    color: var(--lightModeText);
+}
+
+.layout {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    /* Title - Where in the world */
+    font-size: 14px;
+    font-weight: 800;
+    margin-bottom: 0px;
+}
+
+h2 {
+
+}
+h3 {
+    /* Country details - Country Name */
+    font-size: 22px;
+    font-weight: 800;
+}
+h4 {
+}
+
+h5 {
+    /* Country card - Country Name */
+    font-size: 18px;
+    font-weight: 800;
+}
+h6 {
+}
+p {
+    font-size: 14px;
+}
+
+
+.top_margin {
+    margin-top: 20px;
+}
+
+.left_margin {
+    margin-left: 20px;
+}
+.right_margin {
+    margin-right: 20px;
+}
+
+.top_padding {
+    padding-top: 20px;
+}
+
+.left_padding {
+    padding-left: 20px;
+}
+.right_padding {
+    padding-right: 20px;
+}

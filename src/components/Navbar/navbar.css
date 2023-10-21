@@ -1,0 +1,23 @@
+.navbar {
+    box-shadow: 0px 0px 10px lightgray;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.navbar a{
+    color: inherit;
+    cursor: pointer;
+}
+.navbar a:hover{
+    text-decoration: none;
+}
+
+#darkMode_btn {
+    font-size: 14px;
+    font-weight: 600;
+}
+#darkMode_text {
+    margin-left: 12px;
+}

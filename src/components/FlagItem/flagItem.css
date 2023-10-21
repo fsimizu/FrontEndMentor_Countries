@@ -1,0 +1,12 @@
+.card {
+    width: 18rem; 
+    text-decoration: none;
+    color: inherit;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: auto;
+}
+.card:hover{
+    text-decoration: none;
+    color: inherit;
+}
