@@ -1,8 +1,8 @@
-import React, { useState, useEffect, useContext } from "react";
-import './navbar.css';
+import { faMoon } from '@fortawesome/free-regular-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import React, { useContext } from "react";
 import { ThemeContext } from "../ThemeContext/themeContext";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMoon } from '@fortawesome/free-regular-svg-icons'
+import './navbar.css';
 
 export function Navbar() {
 

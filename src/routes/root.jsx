@@ -1,16 +1,11 @@
-import React , {useContext} from "react";
-import { Navbar } from "../components/Navbar";
-import { FlagsListContainer } from "../components/FlagsListContainer";
-import { Search } from "../components/Search";
-import { useParams } from "react-router-dom";
+import React, { useContext } from "react";
 import { Layout } from "../Layout/layout";
+import { FlagsListContainer } from "../components/FlagsListContainer";
+import { Navbar } from "../components/Navbar";
 import { ThemeContext } from "../components/ThemeContext/themeContext";
-
 
 export function Root() {
 
-  // const params = useParams();
-  // const isRegionFilter = Boolean(params.region);
   const {isDarkMode} = useContext(ThemeContext)
 
   return (

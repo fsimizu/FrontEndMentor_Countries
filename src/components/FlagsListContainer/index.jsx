@@ -23,7 +23,7 @@ export function FlagsListContainer({ isDarkMode }) {
     const inputRef = useRef();
     const handleKeyUp = (event) => {
 
-        if (event.key === "Enter" && inputRef.current.value) {
+        if ((event.key === "Enter" || event.keyCode === 13) && inputRef.current.value) {
             fetch(`https://restcountries.com/v3.1/name/${inputRef.current.value}`)
                 .then(response => {
                     if (response.ok) {
@@ -39,7 +39,7 @@ export function FlagsListContainer({ isDarkMode }) {
                 .then(json => setCountries(json))
 
         }
-        else if (event.key === "Enter" && !inputRef.current.value) {
+        else if ((event.key === "Enter" || event.keyCode === 13) && !inputRef.current.value) {
             fetch(`https://restcountries.com/v3.1/all`)
                 .then(data => data.json())
                 .then(json => setCountries(json))

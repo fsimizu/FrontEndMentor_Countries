@@ -11,10 +11,10 @@ export function Country() {
 
   return (
     <>
-      {/* <Layout> */}
+      <Layout>
         <Navbar/>
         <FlagDetailsContainer/>
-      {/* </Layout> */}
+      </Layout>
     </>
   );
 }

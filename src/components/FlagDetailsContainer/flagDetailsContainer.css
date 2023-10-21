@@ -1,11 +1,7 @@
 .flagDetails_container {
-    /* width: 100%; */
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* align-items: flex-start; */
-    /* border: 1px solid red; */
-    /* height: 100%; */
     align-items: flex-start;
 
 }
@@ -28,8 +24,6 @@
     margin-top: 26px;
     margin-bottom: 60px;
     padding: 6px 30px;
-
-    /* border: 1px solid grey; */
     box-shadow: 0px 0px 5px lightgrey;
     color: inherit;
     font-weight: 300;
@@ -45,6 +39,5 @@
 .borders_container a{
     border: none;
     padding: 0 20px;
-    /* margin-right: auto; */
-    
+   
 }
