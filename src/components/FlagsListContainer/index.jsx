@@ -22,12 +22,11 @@ export function FlagsListContainer({ isDarkMode }) {
 
     const inputRef = useRef();
     const handleKeyUp = (event) => {
-
         if ((event.key === "Enter" || event.keyCode === 13) && inputRef.current.value) {
             fetch(`https://restcountries.com/v3.1/name/${inputRef.current.value}`)
                 .then(response => {
                     if (response.ok) {
-                        return response.json()
+                        return response.json();
                     } else if (response.status === 404) {
                         setCountries();
                         return Promise.reject('404 - Not found')
@@ -51,10 +50,9 @@ export function FlagsListContainer({ isDarkMode }) {
                 
                     {/* Search bar and filter */}
                     <div className="search_bar_container">
-                        <input ref={inputRef} onKeyUp={handleKeyUp} id="search_bar" type="text" placeholder="&#xF002;     Search for a country..." style={{ fontFamily: "Nunito Sans, FontAwesome" }}
-                            className={isDarkMode ? "theme_dark_element" : "theme_light_element"} />
+                            <input ref={inputRef} onKeyUp={handleKeyUp} enterkeyhint="done" id="search_bar" type="text" placeholder="&#xF002;     Search for a country..." style={{ fontFamily: "Nunito Sans, FontAwesome" }}
+                                className={isDarkMode ? "theme_dark_element" : "theme_light_element"} />
                         <div>
-
                             <select name="region" id="region" onChange={(option) => setRegion(option.target.value)}
                                 className={isDarkMode ? "theme_dark_element" : "theme_light_element"}>
                                 <option value="all" defaultValue hidden>Filter by Region</option>
