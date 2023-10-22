@@ -34,37 +34,34 @@ export function FlagDetailsContainer() {
 
 
     return (
-        <div className={isDarkMode ? "theme_dark_background" : "theme_light_background"}>
-            <div className="flagDetails_container top_padding left_padding right_padding">
-                
-                <a href="/" className={`btn back_btn ${isDarkMode ? "theme_dark_element" : "theme_light_element"}`}><span>&#8592; Back</span></a>
+        <div className={`main_container flagDetails_container top_padding left_padding right_padding ${isDarkMode ? "theme_dark_background" : "theme_light_background"}`}>
 
-                <img src={country.flags?.svg} alt="flag" />
-                <div className="flagDetails_text">
-                    <h3>{country.name?.common}</h3>
-                    <ul>
-                        <li><strong>Native Name: </strong>{country.nativeName}</li>
-                        <li><strong>Population: </strong>{country.population}</li>
-                        <li><strong>Region: </strong>{country.region}</li>
-                        <li><strong>Sub Region: </strong>{country.subregion}</li>
-                        <li><strong>Capital: </strong>{country.capital}</li>
-                    </ul>
+            <a href="/" className={`btn back_btn ${isDarkMode ? "theme_dark_element" : "theme_light_element"}`}><span>&#8592; Back</span></a>
 
-                    <ul>
-                        <li><strong>Top Level Domain: </strong>{country.tld}</li>
-                        <li><strong>Currencies: </strong>{country.currency}</li>
-                        <li><strong>Languages: </strong>{country.languages}</li>
-                    </ul>
+            <img src={country.flags?.svg} alt="flag" />
+            <div className="flagDetails_text">
+                <h3>{country.name?.common}</h3>
+                <ul>
+                    <li><strong>Native Name: </strong>{country.nativeName}</li>
+                    <li><strong>Population: </strong>{country.population}</li>
+                    <li><strong>Region: </strong>{country.region}</li>
+                    <li><strong>Sub Region: </strong>{country.subregion}</li>
+                    <li><strong>Capital: </strong>{country.capital}</li>
+                </ul>
+
+                <ul>
+                    <li><strong>Top Level Domain: </strong>{country.tld}</li>
+                    <li><strong>Currencies: </strong>{country.currency}</li>
+                    <li><strong>Languages: </strong>{country.languages}</li>
+                </ul>
 
 
-                    <h5>Border Countries:</h5>
-                    <div className="borders_container">
+                <h5>Border Countries:</h5>
+                <div className="borders_container">
 
-                        {country.borders?.map((elem, index) => {
-                            return <a href={`/country/${elem}`} key={index} className={`${isDarkMode ? "theme_dark_element" : "theme_light_element"}`}>{elem}</a>
-                        })}
-
-                    </div>
+                    {country.borders?.map((elem, index) => {
+                        return <a href={`/country/${elem}`} key={index} className={`${isDarkMode ? "theme_dark_element" : "theme_light_element"}`}>{elem}</a>
+                    })}
 
                 </div>
             </div>

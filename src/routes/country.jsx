@@ -1,14 +1,11 @@
-import React, {useContext} from "react";
-import { Navbar } from "../components/Navbar";
-import { FlagDetailsContainer } from "../components/FlagDetailsContainer";
+import React from "react";
 import { Layout } from "../Layout/layout";
-import { ThemeContext } from "../components/ThemeContext/themeContext";
+import { FlagDetailsContainer } from "../components/FlagDetailsContainer";
+import { Navbar } from "../components/Navbar";
 
 
 export function Country() {
   
-  const {isDarkMode} = useContext(ThemeContext)
-
   return (
     <>
       <Layout>
