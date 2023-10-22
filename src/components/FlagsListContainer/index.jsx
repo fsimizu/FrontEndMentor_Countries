@@ -50,8 +50,8 @@ export function FlagsListContainer({ isDarkMode }) {
                 
                     {/* Search bar and filter */}
                     <div className="search_bar_container">
-                            <input ref={inputRef} onKeyUp={handleKeyUp} enterkeyhint="done" id="search_bar" type="text" placeholder="&#xF002;     Search for a country..." style={{ fontFamily: "Nunito Sans, FontAwesome" }}
-                                className={isDarkMode ? "theme_dark_element" : "theme_light_element"} />
+                        <input ref={inputRef} onKeyUp={handleKeyUp} enterkeyhint="done" id="search_bar" type="text" placeholder="&#xF002;     Search for a country..." style={{ fontFamily: "Nunito Sans, FontAwesome" }}
+                            className={isDarkMode ? "theme_dark_element" : "theme_light_element"} />
                         <div>
                             <select name="region" id="region" onChange={(option) => setRegion(option.target.value)}
                                 className={isDarkMode ? "theme_dark_element" : "theme_light_element"}>
