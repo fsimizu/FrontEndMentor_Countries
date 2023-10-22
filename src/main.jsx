@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { createHashRouter, RouterProvider } from 'react-router-dom';
+import { createHashRouter, createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { ThemeContextProvider } from './components/ThemeContext/themeContext';
 import './index.css';
 import { Country } from './routes/country';
 import { Root } from './routes/root.jsx';
 
 
-const router = createHashRouter([
+const router = createBrowserRouter([
   {
     path: "/",
     element: <Root />
