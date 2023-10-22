@@ -40,9 +40,9 @@ export function FlagDetailsContainer() {
 
             <div className="flagDetails_container">
                 <img src={country.flags?.svg} alt="flag" />
+                
                 <div className="flagDetails_text">
                     <h3>{country.name?.common}</h3>
-
                     <div className="flagDetails_subtext">
                         <ul>
                             <li><strong>Native Name: </strong>{country.nativeName}</li>
@@ -51,16 +51,14 @@ export function FlagDetailsContainer() {
                             <li><strong>Sub Region: </strong>{country.subregion}</li>
                             <li><strong>Capital: </strong>{country.capital}</li>
                         </ul>
-
                         <ul>
                             <li><strong>Top Level Domain: </strong>{country.tld}</li>
                             <li><strong>Currencies: </strong>{country.currency}</li>
                             <li><strong>Languages: </strong>{country.languages}</li>
                         </ul>
                     </div>
-
                     <div className="borders_container">
-                        <h5>Border Countries:</h5>
+                        <div className="borders_title"><strong>Border Countries:</strong></div>
                         <div className="borders_buttons">
                             { !country.borders && <div>No border countires.</div>}
 

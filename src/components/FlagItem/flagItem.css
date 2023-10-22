@@ -1,5 +1,5 @@
 .card {
-    width: 18rem; 
+    width: 17rem; 
     text-decoration: none;
     color: inherit;
     border-radius: 5px;
@@ -9,4 +9,26 @@
 .card:hover{
     text-decoration: none;
     color: inherit;
+}
+
+.card-text {
+    list-style-type: none;
+}
+
+.card-body {
+    margin-bottom: 20px;
+}
+
+li {
+    margin-bottom: 4px;
+}
+
+@media (min-width: 992px) {
+    .card {
+        margin: inherit;
+    }
+    .card-title {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
 }

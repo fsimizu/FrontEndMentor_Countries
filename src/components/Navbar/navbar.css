@@ -21,3 +21,9 @@
 #darkMode_text {
     margin-left: 12px;
 }
+
+@media (min-width: 992px) {
+    #darkMode_btn {
+        font-size: 16px;
+    }
+}

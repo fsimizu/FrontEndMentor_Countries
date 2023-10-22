@@ -3,13 +3,18 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    margin-bottom: 50px;
 
 }
 
 .flagDetails_container img{
     width: 100%;
-
 }
+
+.flagDetails_container p, .flagDetails_container ul {
+    font-size: var(--detailsSize);
+}
+
 
 .flagDetails_text h3 {
     margin-top: 48px;
@@ -27,6 +32,7 @@
     box-shadow: 0px 0px 5px lightgrey;
     color: inherit;
     font-weight: 300;
+    text-decoration: none;
 }
 
 .borders_buttons {
@@ -39,13 +45,11 @@
 .borders_buttons a{
     border: none;
     padding: 0 20px;
-
     text-decoration: none;
     color: inherit;
     width: 80px;
     text-align: center;
     box-shadow: 0 0 5px lightgray;
-   
 }
 @media (min-width: 992px) {
     .flagDetails_container {
@@ -55,21 +59,27 @@
         /* border: 1px solid red; */
     }
     .flagDetails_container > * {
-
         width: 45% !important;
     }
+    .flagDetails_text h3 {
+        font-size: 28px;
+    }
+    
     .flagDetails_subtext {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
+    .flagDetails_subtext li {
+        margin-bottom: 6px;
+    }
     .borders_container {
         display: flex;
         flex-direction: row;
     }
-    .borders_container h5 {
-        width: 200px;
-        min-width: 200px;
+    .borders_title {
+        width: 160px;
+        min-width: 160px;
 
         /* border: 1px solid red; */
     }

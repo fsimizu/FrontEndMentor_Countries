@@ -3,7 +3,6 @@
     padding: 0px;
     box-sizing: border-box;
     font-family: 'Nunito Sans', sans-serif;
-    /* background-color: var(--lightModeBackground); */
 }
 
 :root {
@@ -16,6 +15,10 @@
     --lightModeBackground: hsl(0, 0%, 98%);
     --lightModeText: hsl(200, 15%, 8%);
     --lightModeInput: hsl(0, 0%, 52%);
+
+    /* Font sizes */
+    --homepageSize: 14px;
+    --detailsSize: 16px 
 }
 
 .theme_dark_background {
@@ -70,8 +73,9 @@ h5 {
 }
 h6 {
 }
-p {
-    font-size: 14px;
+
+p, ul {
+    font-size: var(--homepageSize);
 }
 
 
@@ -95,4 +99,19 @@ p {
 }
 .right_padding {
     padding-right: 20px;
+}
+strong{
+    font-weight: 600;
+}
+
+@media (min-width: 992px) {
+    h1 {
+        font-size: 22px;
+    }
+    .left_padding {
+        padding-left: 84px;
+    }
+    .right_padding {
+        padding-right: 84px;
+    }
 }
